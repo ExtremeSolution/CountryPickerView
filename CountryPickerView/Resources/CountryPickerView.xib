@@ -12,6 +12,7 @@
                 <outlet property="countryDetailsLabel" destination="4Mf-hk-O6C" id="1Dv-CS-6Cf"/>
                 <outlet property="flagImageView" destination="0ui-wz-fhH" id="aWg-vy-G4b"/>
                 <outlet property="spacingConstraint" destination="f2R-wJ-cfm" id="lt5-i3-VM4"/>
+                <outlet property="subView" destination="rOy-96-GKY" id="jmA-aw-YPv"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
