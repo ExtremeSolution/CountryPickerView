@@ -42,7 +42,6 @@ public class CountryPickerView: NibView {
         didSet {
             flagImageView.clipsToBounds = true
             flagImageView.layer.masksToBounds = true
-            flagImageView.layer.cornerRadius = 2
         }
     }
     @IBOutlet public weak var countryDetailsLabel: UILabel!

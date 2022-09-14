@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,14 +19,17 @@
             <rect key="frame" x="0.0" y="0.0" width="346" height="94"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rOy-96-GKY">
+                <view contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" translatesAutoresizingMaskIntoConstraints="NO" id="rOy-96-GKY">
                     <rect key="frame" x="0.0" y="0.0" width="346" height="94"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ui-wz-fhH">
-                            <rect key="frame" x="0.0" y="0.5" width="256" height="94"/>
+                            <rect key="frame" x="0.0" y="8" width="20" height="78"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="mxo-S5-av7"/>
+                            </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="(NG) +234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mf-hk-O6C">
-                            <rect key="frame" x="264" y="-0.5" width="82" height="94.5"/>
+                            <rect key="frame" x="28" y="0.0" width="318" height="94"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -40,10 +41,10 @@
                         <constraint firstAttribute="trailing" secondItem="4Mf-hk-O6C" secondAttribute="trailing" id="GOz-D9-UZP"/>
                         <constraint firstItem="4Mf-hk-O6C" firstAttribute="centerY" secondItem="rOy-96-GKY" secondAttribute="centerY" id="K0F-Oh-iPl"/>
                         <constraint firstItem="0ui-wz-fhH" firstAttribute="leading" secondItem="rOy-96-GKY" secondAttribute="leading" id="R2F-Rd-8PH"/>
-                        <constraint firstItem="0ui-wz-fhH" firstAttribute="height" secondItem="rOy-96-GKY" secondAttribute="height" id="SEs-55-b9c"/>
-                        <constraint firstItem="0ui-wz-fhH" firstAttribute="centerY" secondItem="rOy-96-GKY" secondAttribute="centerY" id="bm9-la-i16"/>
                         <constraint firstItem="4Mf-hk-O6C" firstAttribute="leading" secondItem="0ui-wz-fhH" secondAttribute="trailing" constant="8" id="f2R-wJ-cfm"/>
+                        <constraint firstAttribute="bottom" secondItem="0ui-wz-fhH" secondAttribute="bottom" constant="8" id="fLc-aO-u9e"/>
                         <constraint firstItem="4Mf-hk-O6C" firstAttribute="height" secondItem="rOy-96-GKY" secondAttribute="height" id="grh-0A-Y04"/>
+                        <constraint firstItem="0ui-wz-fhH" firstAttribute="top" secondItem="rOy-96-GKY" secondAttribute="top" constant="8" id="ydE-l8-5Qn"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
